@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="time_normal">00:00</string>
+    <string name="app_name">MMusic</string>
+    <string name="music_name">歌曲：</string>
+    <string name="singer">歌手：</string>
+    <string name="years">年代：</string>
+    <string name="no_lyric">没有歌词</string>
+    <string name="xml_menu_exit">退出</string>
+    <string name="xml_activity_main_sliding_top_text">MMusic</string>
+    <string name="xml_activity_main_folder_back_text">返回上一级</string>
+    <string name="xml_activity_scan_title">扫描歌曲</string>
+    <string name="xml_dialog_scan_title">扫描歌曲</string>
+    <string name="xml_dialog_scan_info">列表没有歌曲，请先扫描歌曲！</string>
+    <string name="xml_dialog_scan_btn">确定</string>
+    <string name="xml_dialog_delete_title">警告</string>
+    <string name="xml_dialog_delete_info">确认将文件从SD卡上删除？</string>
+    <string name="xml_dialog_delete_positive">确定</string>
+    <string name="xml_dialog_delete_negative">取消</string>
+    <string name="xml_dialog_clear_title">注意</string>
+    <string name="xml_menu_clear">清空歌曲</string>
+    <string name="xml_dialog_clear_message">确认清空歌曲列表?</string>
+    <string name="xml_menu_clear_no">取消清空</string>
+    <string name="xml_dialog_clear_positive">确定</string>
+    <string name="xml_dialog_clear_negative">取消</string>
+    <string name="xml_dialog_info_title">歌曲信息</string>
+    <string name="xml_dialog_about_title">关于</string>
+    <string name="xml_dialog_about_info1">作者：whitelaning</string>
+    <string name="xml_dialog_about_info2">邮箱：whitelaning@gmail.com\nQQ：408144001</string>
+    <string name="xml_dialog_btn_negative">关闭</string>
+    <string name="xml_activity_sleep_title">睡眠时间(分钟)</string>
+    <string name="xml_activity_sleep_left_time">5</string>
+    <string name="xml_activity_sleep_right_time">90</string>
+    <string name="xml_dialog_about_info3">v2.0.1</string>
+    <string name="Press_again_to_exit_the_program">再按一次退出程序</string>
+    <string name="all_music">全部歌曲</string>
+    <string name="my_best_love">我的最爱</string>
+    <string name="folder">文件夹</string>
+    <string name="Toast_delete_ok">歌曲删除成功</string>
+    <string name="Scan_songs">扫描歌曲</string>
+    <string name="Scanning">正在扫描</string>
+    <string name="Scan_completed">点击返回</string>
+    <string name="no_playing">没有播放音乐</string>
+    <string name="minutes_later_trun_off"> 分钟后自动关闭音乐</string>
+    <string name="one_hour">1小时</string>
+
+</resources>

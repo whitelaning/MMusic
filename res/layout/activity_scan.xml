@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_scan_bg" >
+
+    <RelativeLayout
+        android:id="@+id/scan_actionbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/activity_scan_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/activity_scan_ib_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/player_btn_return_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_centerInParent="true"
+            android:text="@string/xml_activity_scan_title"
+            android:textColor="@color/info_text_1"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scan_actionbar_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent" >
+
+        <ImageView
+            android:id="@+id/activity_scan_btn_scan_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/scan_btn_bg"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/activity_scan_btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/scan_finish_btn_bg_style"
+            android:textSize="20.0sp" />
+        
+        <TextView
+            android:id="@+id/activity_scan_finish_text"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/activity_scan_btn_scan"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/info_text_2"
+            android:textSize="19.0sp" />
+
+        <TextView
+            android:id="@+id/activity_scan_text"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/activity_scan_finish_text"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/info_text_3"
+            android:textSize="19.0sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_scan_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_above="@id/scan_actionbar_bottom"
+        android:layout_below="@id/scan_actionbar_top"
+        android:background="#ced3d6"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/listview_divider"
+        android:dividerHeight="1.0dip"
+        android:padding="2.0dip"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb" />
+
+</RelativeLayout>

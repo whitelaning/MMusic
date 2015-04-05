@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rotate_bg"
+    tools:context=".activity.Sleep" >
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/sleep_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/xml_activity_sleep_title"
+        android:textColor="@color/info_text_1"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/sleeptextrela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sleep_top_title"
+        android:layout_marginTop="2sp" >
+
+        <ImageView
+            android:id="@+id/fsagshgdsrhrd"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/pop_progress_bg"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/sleeptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fsagshgdsrhrd"
+            android:layout_alignRight="@+id/fsagshgdsrhrd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12sp"
+            android:gravity="center_horizontal"
+            android:text="@string/xml_activity_sleep_left_time"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fsey6herht5sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sleeptextrela"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"
+            android:text="@string/xml_activity_sleep_left_time"
+            android:textColor="@color/time_current_bg" />
+
+        <SeekBar
+            android:id="@+id/sleepseekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="85"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:progressDrawable="@drawable/player_seekbar_style"
+            android:thumb="@drawable/thumb_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10sp"
+            android:text="@string/xml_activity_sleep_right_time"
+            android:textColor="@color/time_current_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fsey6herht5sh"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/sleepqueding"
+            android:layout_width="120.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_yes_style"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/sleepquxiao"
+            android:layout_width="120.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_no_style"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

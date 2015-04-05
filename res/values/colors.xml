@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pressed_bg">#8033B5E5</color>
+    <color name="dialog_divider">#FF4DB6FF</color>
+    <color name="main_list_divider_bg">#50FFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="music_hide_item_bg">#FFF5F5F5</color>
+    <color name="music_item_ib_favorite">#FFEEEEEE</color>
+    <color name="black">#FF000000</color>
+    <color name="rounded_image_view_border_color">#FF2140</color>
+    <color name="time_current_bg">#FFABAFB3</color>
+    <color name="activity_player_lyric_bg">#CED3D6</color>
+    <color name="player_activity_controlbar">#CED3D6</color>
+    <color name="activity_scan_bg">#CED3D6</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="activity_player_top_coverview">#23000000</color>
+    <color name="activity_player_bg">#FFCED3D6</color>
+    <color name="listview_divider">#FFBDBDBD</color>
+    <color name="transparent">#00000000</color>
+    <color name="info_text_1">#FF000000</color>
+    <color name="info_text_2">#D8000000</color>
+    <color name="info_text_3">#34000000</color>
+    <color name="activity_main_top_bg">#FF990000</color>
+    <color name="activity_main_top_icon_bg">#FFB0120A</color>
+    <color name="activity_main_bg">#FFF5F5F5</color>
+    <color name="sliding_text">#B2DFEE</color>
+    <color name="sliding_bg">#FF343434</color>
+
+</resources>

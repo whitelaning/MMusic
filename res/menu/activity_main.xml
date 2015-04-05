@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_clear"
+        android:title="@string/xml_menu_clear">
+
+        <!--
+        <menu>
+              
+            	 子菜单的选项  
+            <item
+                android:id="@+id/menu_clear_yes"
+                android:title="@string/xml_menu_clear_yes"/>
+            <item
+                android:id="@+id/menu_clear_no"
+                android:title="@string/xml_menu_clear_no"/>
+        </menu>
+        -->
+    </item>
+    <item
+        android:id="@+id/menu_exit"
+        android:title="@string/xml_menu_exit"/>
+
+</menu>

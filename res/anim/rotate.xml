@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="4000"
+    android:fromDegrees="0"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="infinite"
+    android:toDegrees="+359" />
+<!--
+     rotate 旋转动画效果
+       android:fromDegrees 起始的角度度数
+	   android:toDegrees 结束的角度度数，负数表示逆时针，正数表示顺时针。如10圈则android:fromDegrees大3600即可
+	  			|-从0到359度开始循环旋转，若设置成360在停止时会出现停顿现象
+	   
+	   android:pivotX 旋转中心的X坐标，浮点数或是百分比。浮点数表示相对于Object的左边缘，如5; 百分比表示相对于Object的左边缘，如5%; 另一种百分比表示相对于父容器的左边缘，如5%p; 一般设置为50%表示在Object中心
+       android:pivotY 旋转中心的Y坐标，浮点数或是百分比。浮点数表示相对于Object的上边缘，如5; 百分比表示相对于Object的上边缘，如5%; 另一种百分比表示相对于父容器的上边缘，如5%p; 一般设置为50%表示在Object中心
+       
+       android:duration 表示从android:fromDegrees转动到android:toDegrees所花费的时间，单位为毫秒。可以用来计算速度。
+       			|-运行速度为运行时间(android:duration)除以运行角度差(android:toDegrees-android:fromDegrees)，比如android:duration为1000，android:toDegrees为360，android:fromDegrees为0就表示1秒转1圈。
+       
+       android:interpolator表示变化率，但不是运行速度。一个插补属性，可以将动画效果设置为加速，减速，反复，反弹等。默认为开始和结束慢中间快，
+			       |-使用android.res.anim中的资源时候发现有三种动画插入器:
+			                accelerate_decelerate_interpolator   加速-减速 动画插入器
+			                accelerate_interpolator               加速-动画插入器
+			                decelerate_interpolator               减速- 动画插入器
+			       |-其他的属于特定的动画效果:
+						   AccelerateDecelerateInterpolator 在动画开始与结束的地方速率改变比较慢，在中间的时候加速
+						   AccelerateInterpolator  在动画开始的地方速率改变比较慢，然后开始加速
+						   AnticipateInterpolator 开始的时候向后然后向前甩
+						   AnticipateOvershootInterpolator 开始的时候向后然后向前甩一定值后返回最后的值
+						   BounceInterpolator   动画结束的时候弹起
+						   CycleInterpolator 动画循环播放特定的次数，速率改变沿着正弦曲线
+						   DecelerateInterpolator 在动画开始的地方快然后慢
+						   LinearInterpolator   以常量速率改变
+						   OvershootInterpolator    向前甩一定值后再回到原来位置  
+       
+       android:startOffset 在调用start函数之后等待开始运行的时间，单位为毫秒，若为10，表示10ms后开始运行
+       android:repeatCount 重复的次数，默认为0，必须是int，可以为-1表示不停止
+       			|-android:repeatCount="-1"即表示循环运行，配合上android:fromDegrees="0" android:toDegrees="360"表示不间断
+       
+       android:repeatMode 重复的模式，默认为restart，即重头开始重新运行，可以为reverse即从结束开始向前重新运行。在android:repeatCount大于0或为infinite时生效
+       android:detachWallpaper 表示是否在壁纸上运行
+       android:zAdjustment 表示被animated的内容在运行时在z轴上的位置，默认为normal。
+       			|-
+                normal保持内容当前的z轴顺序
+                top运行时在最顶层显示
+                bottom运行时在最底层显示
+-->

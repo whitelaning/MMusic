@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ced3d6" >
+
+    <ImageView
+        android:id="@+id/notification_item_album"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_ablum_bg" />
+
+    <LinearLayout
+        android:id="@+id/notification_item_play_view"
+        android:layout_width="120.0dip"
+        android:layout_height="70.0dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/notification_item_btn_pause"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/player_btn_play_normal" />
+
+        <ImageButton
+            android:id="@+id/notification_item_btn_next"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginRight="3.0dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/player_btn_next_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="70.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_toLeftOf="@id/notification_item_play_view"
+        android:layout_toRightOf="@id/notification_item_album"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notification_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/info_text_1"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/notification_item_artist"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:gravity="top"
+            android:singleLine="true"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>
